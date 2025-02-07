@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100vh; /* Full viewport height */
+    height: 85vh;  /* Full viewport height */
     width: 100%;
     padding: 0 10%;
     box-sizing: border-box;

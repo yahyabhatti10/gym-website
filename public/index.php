@@ -25,6 +25,8 @@
     <img src="assets/images/hero-section-image.jpg" alt="Hero Image">
   </div>
 </div>
-
+<?php
+  include('../includes/footer.php'); // Include the footer
+?>
 </body>
 </html>
