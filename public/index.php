@@ -18,7 +18,7 @@
 
     Whether you’re looking to build muscle, lose weight, or enhance your overall well-being, our gym offers the best facilities and professional trainers to keep you motivated.
 
-    Join Health & Fitness today and take the first step towards a better you! 💪🔥</p>
+    Join Health & Fitness today and take the first step towards a better you! </p>
     <a href="register.php" class="btn">Join Now</a>
   </div>
   <div class="hero-image">
