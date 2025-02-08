@@ -70,7 +70,8 @@ body {
 }
 
 form input,
-form select {
+form select,
+form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -120,6 +121,30 @@ form button:hover {
     margin: 10px 0;
     border-radius: 5px;
     text-align: center;
+}
+
+/* Reviews Card */
+.reviews-card .review {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.reviews-card .review:last-child {
+    border-bottom: none;
+}
+
+.reviews-card .review p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.reviews-card .review small {
+    color: #555;
+}
+
+.reviews-card .review-form textarea {
+    resize: vertical;
+    min-height: 80px;
 }
 
 /* Responsive Design */
