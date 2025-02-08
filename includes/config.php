@@ -7,10 +7,11 @@ define('DB_DATABASE', 'gym_website_db');  // The name of the database you just c
 
 // Create a connection to MySQL using PDO
 try {
-    $pdo = new PDO("mysql:host=" . DB_SERVER . ";dbname=" . DB_DATABASE, DB_USERNAME, DB_PASSWORD);
-    // Set the PDO error mode to exception
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo = new PDO("mysql:host=" . DB_SERVER . ";dbname=" . DB_DATABASE, DB_USERNAME, DB_PASSWORD, [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    ]);
 } catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
+    die("Connection failed: " . $e->getMessage());
 }
 ?>

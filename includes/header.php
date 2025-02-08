@@ -1,4 +1,11 @@
 <!-- header.php -->
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +13,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/header.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
 </head>
 <body>
   <nav>
@@ -33,7 +39,14 @@
       <a href="about.php">About</a>
       <a href="services.php">Services</a>
       <a href="register.php">Become a Member</a>
-      <a href="login.php">Login</a>
+
+      <?php if (isset($_SESSION['user_id'])): ?>
+          <!-- If user is logged in, show Dashboard & Logout -->
+          <a href="dashboard.php">Dashboard</a>
+      <?php else: ?>
+          <!-- If user is NOT logged in, show Login -->
+          <a href="login.php">Login</a>
+      <?php endif; ?>
     </div>
   </nav>
 </body>

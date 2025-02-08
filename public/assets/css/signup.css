@@ -1,17 +1,15 @@
-
-
 /* Full Page Background */
-.login-section {
+.signup-section {
     background-color: #f9f9f9;
     display: flex;
-    flex-direction: column; /* Ensures navbar stays at the top */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 85vh;
 }
 
-/* Login Form Container */
-.login-container {
+/* Signup Form Container */
+.signup-container {
     background: white;
     padding: 30px;
     border-radius: 10px;
@@ -20,11 +18,11 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
 }
 
 /* Heading */
-.login-form h2 {
+.signup-form h2 {
     margin-bottom: 20px;
     color: #333;
 }
@@ -44,7 +42,7 @@
 
 .input-group input {
     width: 100%;
-    padding: 10px; 
+    padding: 10px 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
@@ -64,8 +62,8 @@
     cursor: pointer;
 }
 
-/* Login Button */
-.login-btn {
+/* Signup Button */
+.signup-btn {
     width: 100%;
     background-color: #2b2b2b;
     color: white;
@@ -77,27 +75,17 @@
     transition: background 0.3s;
 }
 
-.login-btn:hover {
+.signup-btn:hover {
     background-color: #0a0a0a;
 }
 
-/* Forgot Password & Signup */
-.options {
-    margin-top: 10px;
-}
-
-.options a {
-    color: #0a0a0a;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.signup-text {
+/* Login Redirect */
+.login-text {
     margin-top: 15px;
     font-size: 14px;
 }
 
-.signup-text a {
+.login-text a {
     color: #0a0a0a;
     font-weight: bold;
     text-decoration: none;
@@ -110,14 +98,15 @@
     text-align: center;
 }
 
+
 /* 🔹 Responsive Design */
 @media (max-width: 480px) {
-    .login-container {
+    .signup-container {
         width: 90%;
         padding: 20px;
     }
 
-    .login-form h2 {
+    .signup-form h2 {
         font-size: 20px;
     }
 
@@ -126,13 +115,12 @@
         padding: 8px;
     }
 
-    .login-btn {
+    .signup-btn {
         font-size: 14px;
         padding: 10px;
     }
 
-    .options a,
-    .signup-text {
+    .login-text {
         font-size: 12px;
     }
 }
