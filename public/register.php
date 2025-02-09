@@ -1,8 +1,34 @@
+<!-- /*
+ * This file is the membership registration page for the Health & Fitness website.
+ * It starts by initializing a session and including the common header (navigation, styling).
+ *
+ * The first block checks if the user is logged in by looking for a session variable ('user_id').
+ * If the user is not logged in, a message is displayed prompting them to log in, and the script exits.
+ *
+ * After confirming the user is logged in, the file includes the configuration for the database connection.
+ * It then retrieves the user's full name from the 'users' table based on the session 'user_id' using a prepared statement.
+ * If the user exists in the database, their full name is stored in a variable; otherwise, it remains empty.
+ *
+ * Next, the code fetches a list of additional services from the 'services' table, which will be displayed
+ * as checkboxes in the registration form for users to choose extra services.
+ *
+ * The script also checks for any messages (success or error) stored in the session, which are then displayed above the form.
+ *
+ * The HTML section of the page creates a multi-part registration form that includes:
+ *   - Personal Information: Shows read-only fields for full name and email, plus inputs for phone, age, and weight.
+ *   - Membership Plan: Allows selection between monthly and yearly membership options.
+ *   - Additional Services: Dynamically lists available services from the database as checkboxes, each with a description and price.
+ *   - Payment: Displays a read-only field for the total payment amount, which is calculated via JavaScript.
+ *
+ * The form submits its data to process_register.php for processing the membership registration.
+ * Finally, the common footer is included, and a JavaScript file is linked to handle dynamic form behaviors.
+ */ -->
+
 <?php
 session_start();
 include('../includes/header.php');
 
-// Ensure the message is shown after successful registration
+// Ensure the form is shown after successful login other wise following message will show
 if (!isset($_SESSION['user_id'])) {
   echo '<div class="login-required">
     <p>Login is required to access this page. <a href="login.php">Login here</a></p>

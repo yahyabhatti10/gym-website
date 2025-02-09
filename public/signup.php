@@ -1,3 +1,25 @@
+<!-- /*
+ * signup.php
+ *
+ * This script provides a user registration interface for the Health & Fitness platform.
+ * It includes a form that collects user details such as full name, email, and password,
+ * and submits them to `process_signup.php` for validation and account creation.
+ *
+ * Features:
+ * - Starts a session to manage user authentication state.
+ * - Checks if a user is already logged in (`$_SESSION['user_id']`), redirecting them to 
+ *   the homepage or dashboard if they have an active session.
+ * - Displays an HTML signup form with input fields for full name, email, password, 
+ *   and password confirmation.
+ * - Implements password visibility toggle for better user experience.
+ * - Uses session-based error handling to display validation messages if the signup 
+ *   process encounters errors.
+ * - Provides a link for users who already have an account to navigate to the login page.
+ * - Loads external stylesheets and JavaScript files for enhanced UI and interactivity.
+ * - Includes common header and footer files for consistency across the platform.
+ */ -->
+
+
 <?php
 session_start();
 

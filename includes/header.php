@@ -1,5 +1,18 @@
 <!-- header.php -->
+
+<!-- /*
+ * header.php provides the common header and navigation for the gym website.
+ * It first checks if a session has been started; if not, it starts a new session.
+ * The file then outputs the HTML head section with meta tags, a link to the header stylesheet,
+ * and a Google Font for styling.
+ * The navigation bar uses an input checkbox to toggle a responsive sidebar menu.
+ * It includes links to key pages like Home, About, Services, and Become a Member.
+ * Depending on whether a user is logged in (checked via a session variable), it conditionally displays
+ * a Dashboard link (for logged-in users) or a Login link (for guests).
+ */ -->
+
 <?php
+
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }

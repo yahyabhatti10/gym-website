@@ -1,3 +1,13 @@
+<!-- /*
+ * index.php is the home page of the Health & Fitness website.
+ * This file combines common header and footer sections with a unique hero section.
+ * It starts by including the header (navigation bar and common top elements)
+ * and ends by including the footer (copyright notice and closing HTML tags).
+ * The main content is the hero section which displays a welcome message,
+ * a brief description of the gym, and a call-to-action button for new members.
+ */ -->
+
+
 <?php
   include('../includes/header.php'); // Include the navbar
 ?>

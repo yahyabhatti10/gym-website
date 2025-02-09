@@ -1,3 +1,19 @@
+<!-- /*
+ * services.php is the Services page of the Health & Fitness website.
+ * It begins by including a common header file which loads the navigation bar and handles session management.
+ * The HTML document is set up with proper meta tags for character encoding, viewport settings, and browser compatibility.
+ * A dedicated stylesheet is linked to apply specific styles for this page.
+ * The body features a section that displays the gym's services:
+ *   - The container holds a section title "Our Services" and a services container.
+ *   - Inside the services container, there are three service boxes.
+ *     Each service box includes an image, a heading, and a detailed description for:
+ *       1. Personal Training
+ *       2. Nutrition Plans
+ *       3. Group Classes
+ * Finally, the common footer is included to maintain a consistent layout across the website.
+ */ -->
+
+
 <?php
   include('../includes/header.php'); // Include the navbar
 ?>

@@ -1,3 +1,38 @@
+<!-- /*
+ * dashboard.php - User Dashboard Page
+ * 
+ * This script handles the user dashboard functionality, ensuring that only 
+ * authenticated users can access it. It retrieves and displays user information, 
+ * membership details, latest payment data, and user reviews. Additionally, it 
+ * provides options for users to edit their membership information and submit reviews.
+ * 
+ * Key Functionalities:
+ * 1. **Session Handling & Authentication:** 
+ *    - Starts a session and checks if the user is logged in.
+ *    - Redirects unauthorized users to the login page.
+ * 
+ * 2. **Database Queries:**
+ *    - Fetches user details from the `users` table based on the logged-in user ID.
+ *    - Retrieves membership information from the `memberships` table.
+ *    - Fetches the latest payment details from the `payments` table.
+ *    - Retrieves all reviews from the `reviews` table, along with the reviewer's full name.
+ * 
+ * 3. **Dashboard UI Components:**
+ *    - Displays personal user details.
+ *    - Shows membership information (if available) along with an edit form.
+ *    - Lists user reviews with an option to post a new review.
+ *    - Provides a logout button to end the session.
+ * 
+ * 4. **Security Measures:**
+ *    - Uses `htmlspecialchars()` to prevent XSS attacks when displaying user data.
+ *    - Prepares SQL queries using `PDO::prepare()` and binds parameters to prevent SQL injection.
+ * 
+ * This script integrates frontend elements via external CSS and JavaScript files and 
+ * includes common page components such as the header and footer.
+ */ -->
+
+
+
 <?php
 session_start();
 include('../includes/config.php');

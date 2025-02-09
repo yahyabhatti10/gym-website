@@ -1,3 +1,11 @@
+<!-- /*
+ * This file, config.php, sets up the database connection using PHP Data Objects (PDO).
+ * It defines constants for the MySQL server details including the server name, username, password, and database name.
+ * These constants are then used to create a new PDO instance with error handling set to throw exceptions
+ * and with the default fetch mode set to associative arrays, making it easier to work with query results.
+ * If the connection fails, the script stops and displays an error message.
+ */ -->
+
 <?php
 // Database connection settings
 define('DB_SERVER', 'localhost');  // The server where MySQL is running (usually localhost)

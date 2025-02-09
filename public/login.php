@@ -1,3 +1,25 @@
+<!-- /*
+ * login.php
+ *
+ * This script provides a login interface for users to authenticate into the system. 
+ * It includes a form that collects the user's email and password and submits them to 
+ * `process_login.php` for validation and authentication.
+ *
+ * Features:
+ * - Starts a session to manage user authentication state.
+ * - Checks if a user is already logged in (`$_SESSION['user_id']`), redirecting them to 
+ *   the homepage or dashboard if they have an active session.
+ * - Displays an HTML login form with email and password fields, along with a password 
+ *   visibility toggle for better user experience.
+ * - Implements session-based error handling to provide feedback on invalid login attempts.
+ * - Includes a "Forgot Password?" link for users to reset their credentials.
+ * - Provides a link for new users to navigate to the signup page.
+ * - Loads external stylesheets and JavaScript files for enhanced UI and interactivity.
+ * - Includes common header and footer files for consistency across the platform.
+ */ -->
+
+
+
 <?php
 session_start();
 

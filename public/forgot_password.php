@@ -1,3 +1,22 @@
+<!-- /*
+ * forgot_password.php
+ *
+ * This script provides a password recovery form for users who have forgotten their credentials. 
+ * It includes input fields for full name, email, new password, and password confirmation.
+ *
+ * Features:
+ * - Displays an HTML form that collects user details for password reset.
+ * - Includes session-based error and success message handling.
+ * - Uses a `process_forgotpassword.php` script for backend processing of password reset requests.
+ * - Implements password visibility toggling using a simple frontend script.
+ * - Ensures user input validation with required attributes on form fields.
+ * - Provides a navigation link to redirect users back to the login page if they remember their password.
+ * - Includes a common header and footer for consistent page structure.
+ */ -->
+
+
+
+
 <?php
 session_start();
 include('../includes/header.php'); // Include the navbar

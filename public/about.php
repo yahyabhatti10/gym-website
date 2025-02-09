@@ -1,3 +1,14 @@
+<!-- /*
+ * about.php displays the "About Us" page for the Health & Fitness website.
+ * It begins by including the header, which provides the navigation bar and handles session management.
+ * The HTML structure includes meta tags for character set, viewport, and compatibility,
+ * a title for the page, and a link to a CSS file specific to the About page.
+ * The body contains an "about-container" that holds an "about-card".
+ * This card displays a banner image and detailed content explaining the gym's mission, identity, and community.
+ * At the end of the page, the footer is included to provide a consistent bottom section.
+ */ -->
+
+
 <?php
 include('../includes/header.php'); // Include the navbar
 ?>
